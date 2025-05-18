@@ -8,3 +8,32 @@ FETCH = [
     pin.RAM_OUT | pin.SRC_IN | pin.PC_INC,
 ]
 
+MOV = 0 | pin.ADDR2 
+ADD = (1 << pin.ADDR2_SHIFT) | pin.ADDR2
+
+NOP = 0x00
+HLT = 0x3f
+
+INSTRUCTIONS = {
+    2: {
+        MOV: {
+            (pin.AM_REG, pin.AM_INS): [
+                pin.DST_W | pin.SRC_OUT,
+            ]
+        }
+    },
+    1: {
+
+    },
+    0: {
+        NOP: [
+            pin.CYC,
+        ],
+        HLT : [
+            pin.HALT,
+        ]
+    }
+}
+
+print(bin(MOV))
+

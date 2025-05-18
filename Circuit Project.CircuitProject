@@ -2,7 +2,7 @@
 <lc:CircuitProject xmlns:lc="http://LogicCircuit.net/2.0.0.13/CircuitProject.xsd">
 	<lc:Project>
 		<lc:ProjectId>d7992854-1227-4515-a602-1a3a33652bc0</lc:ProjectId>
-		<lc:Zoom>0.9</lc:Zoom>
+		<lc:Zoom>0.7000000000000001</lc:Zoom>
 		<lc:Frequency>1</lc:Frequency>
 		<lc:LogicalCircuitId>4be927cf-f640-4a91-bbe9-72f084c4bb5f</lc:LogicalCircuitId>
 	</lc:Project>
